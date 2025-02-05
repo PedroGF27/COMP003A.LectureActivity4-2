@@ -8,7 +8,20 @@ namespace COMP003A.LectureActivity4_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            GreetUser(); // Greets user
+
+            Console.Write("Enter the first number: "); // Input 2 numbers and calculate sum
+            int num1 = int.Parse(Console.ReadLine()); // Parse user input to integer
+
+            Console.Write("Enter the second number: ");
+            int num2 = int.Parse(Console.ReadLine()); // Parse user input to integer
+
+            int sum = CalculateSum(num1, num2); // Call method and store result
+            Console.WriteLine($"The sum of {num1} and {num2} is {sum}.");
+
+            int[] numbers = { 10, 20, 30, 40, 50 }; // Display the contents and initilize an array
+            Console.WriteLine("Array contents: ");
+            DisplayArray(numbers); // Call method to print array
         }
         /// <summary>
         /// Greets the user by their name
